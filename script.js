@@ -20,7 +20,7 @@ class Student extends Person {
 	
     study(){
         // super(this.name, age);
-        console.log(`${this.name} is studying`)
+        console.log(`${this._name} is studying`)
     }
 }
 
@@ -28,7 +28,7 @@ class Teacher extends Person {
 	
     teach(){
         // super(this.name, age);
-        console.log(`${this.name} is teaching`)
+        console.log(`${this._name} is teaching`)
     }
 }
 
