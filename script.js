@@ -1,26 +1,29 @@
 //complete this code
 class Person {
     constructor(name, age){
-        this.name = name;
-        this.age = age;
+        this._name = name;
+        this._age = age;
     }
 
     getname() {
-        return this.name;
+        return this._name;
     }
 	getAge(){
-		return this.age;
+		return this._age;
 	}
 	setname(){
-		this.name = name;
+		this._name = name;
 	}
 
     setAge(){
-        this.age = age;
+        this._age = age;
     }
 }
 
 class Student extends Person {
+	constructor(name, age) {
+        super(name, age); 
+    }
     study(){
         // super(this.name, age);
         console.log(`${this.name} is studying`)
@@ -28,6 +31,9 @@ class Student extends Person {
 }
 
 class Teacher extends Person {
+	constructor(name, age) {
+        super(name, age); 
+    }
     teach(){
         // super(this.name, age);
         console.log(`${this.name} is teaching`)
