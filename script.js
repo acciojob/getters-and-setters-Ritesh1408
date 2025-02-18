@@ -8,6 +8,12 @@ class Person {
     getname() {
         return this.name;
     }
+	getAge(){
+		return this.age;
+	}
+	setname(){
+		this.name = name;
+	}
 
     setAge(){
         this.age = age;
